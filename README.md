@@ -5,7 +5,9 @@ An online integrated knowledge-sharing platform for Indian universities and coll
 ## Tech Stacks
 
 **Backend:** Express JS, node JS, mongoose
+
 **Frontend:** React JS, CSS, TypeScript
+
 **Database:** MongoDB
 
 ## Logo 
