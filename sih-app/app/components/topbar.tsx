@@ -94,13 +94,13 @@ export default function Topbar() {
                         {/* Your navigation buttons */}
                         <ul className="flex flex-col px-6 mt-4 absolute  font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-white md:dark:bg-white dark:border-gray-700">
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/"
                                     className="block py-2 pl-3 pr-4 text-black bg-white rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
                                     aria-current="page"
                                 >
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <Link
