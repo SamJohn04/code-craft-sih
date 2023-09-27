@@ -1,17 +1,3 @@
-const mongoose = require("mongoose");
-
-async function connectToDatabase() {
-  try {
-    await mongoose.connect("mongodb://0.0.0.0:27017/practice");
-    console.log("Connection successful");
-  } catch (err) {
-    console.error(err);
-  }
-}
-
-connectToDatabase();
-
-
 const userSchema = new mongoose.Schema({
     username: {
       type: String,
@@ -36,11 +22,10 @@ const userSchema = new mongoose.Schema({
       required: true
     },
     following: {
-        type: Number,
+        type: [mongoose.Schema.Types.ObjectId],
+        ref: 'University',
         required:true
     }
-  }, { timestamps: true });
+  });
 
-  const User = mongoose.model('User', userSchema);
-
-module.exports = User;
+module.exports = {User: mongoose.model('User', userSchema)};

@@ -1,17 +1,5 @@
 const mongoose = require("mongoose");
 
-async function connectToDatabase() {
-  try {
-    await mongoose.connect("mongodb://0.0.0.0:27017/practice");
-    console.log("Connection successful");
-  } catch (err) {
-    console.error(err);
-  }
-}
-
-connectToDatabase();
-
-
 // Schema for Comments
 const commentSchema = new mongoose.Schema({
     // You can include fields like the user who commented, the comment text, and the date/time of the comment.
@@ -25,10 +13,7 @@ const commentSchema = new mongoose.Schema({
     },
     createdAt: {
       type: Date,
-      default: Date.now
+      default: Date.now()
     }
 });
-
-const Comment = mongoose.model('Comment', commentSchema);
-
-module.exports = Comment;
+module.exports = {Comment: mongoose.model('Comment', commentSchema)};

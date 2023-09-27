@@ -1,4 +1,3 @@
-const mongoose = require('mongoose');
 
 // Schema for University
 const universitySchema = new mongoose.Schema({
@@ -24,8 +23,9 @@ const universitySchema = new mongoose.Schema({
     type: String,
     required: false, // Assuming a GitHub link is optional
   },
-});
+  followers: {
+    type: [mongoose.Schema.Types.ObjectId],
+    ref: 'User',
+  },});
 
-const University = mongoose.model('University', universitySchema);
-
-module.exports = University;
+module.exports = {University: mongoose.model('University', universitySchema)};
