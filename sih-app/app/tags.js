@@ -23,6 +23,6 @@ const tagSchema = new mongoose.Schema({
   
   
   
-  // Sample usage in another schema (e.g., for a post)
-  
-  module.exports = Post;
+  const Tag = mongoose.model('Tag', tagSchema);
+
+  module.exports = Tag;

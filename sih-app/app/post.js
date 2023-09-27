@@ -34,3 +34,6 @@ const postSchema = new mongoose.Schema({
     tags: [String], // An array of tags associated with the post
     images: [String], // An array of image URLs associated with the post
   });
+const Post = mongoose.model('Post', postSchema);
+
+module.exports = Post;
