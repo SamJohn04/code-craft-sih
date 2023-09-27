@@ -37,4 +37,13 @@ const postSchema = new mongoose.Schema({
   });
 const Post = mongoose.model('Post', postSchema);
 
-module.exports = Post;
+async function fetchPosts() {
+  try {
+    const posts = await Post.find();
+    return posts;
+  } catch(err) {
+    console.log(err);
+  }
+}
+
+module.exports = {Post, };
