@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background: #F7F8FD;
+  background: #f9f9fa !important;
   font-family: 'Poppins', sans-serif;
 }
 #login{
