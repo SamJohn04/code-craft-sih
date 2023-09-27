@@ -3,7 +3,7 @@ import SideBarCard from "./SideBarCard";
 
 export default function SideBar() {
     return (
-        <div className="h-screen box-border flex flex-col gap-4 items-end p-8 my-8 absolute left-0 top-0 border-r-2 border-[#DBDBDB] w-[417px]">
+        <div className="h-screen box-border flex flex-col gap-4 items-end p-8 my-8 sticky left-0 top-0 border-r-2 border-[#DBDBDB] w-[417px]">
             <SideBarCard title="Feed" href="/feed" imgSrc="icon/feed.svg" activeImgSrc="icon/feed-active.svg" imgAlt="Feed"/>
             <SideBarCard title="Popular" href="/popular" imgSrc="icon/hot.svg" activeImgSrc="icon/hot-active.svg" imgAlt="Popular"/>
             <hr className="border-t-2 border-[#DBDBDB] w-56"/>
