@@ -3,20 +3,17 @@ export default function Topbar() {
         <div id="topbar">
             <nav className="bg-white border-gray-200 dark:bg-white">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href="https://flowbite.com/" className="flex items-center">
+                    <a className="flex items-center">
                         <img
-                            src="https://flowbite.com/docs/images/logo.svg"
-                            className="h-8 mr-3"
+                            src="\Project Orbit.png"
+                            className="h-16"
                             alt="Flowbite Logo"
                         />
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">
-                            Project Orbit
-                        </span>
                     </a>
                     <div className="relative hidden md:block">
                         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                             <svg
-                                className="w-4 h-4 text-gray-500 dark:text-gray-400"
+                                className="w-4 h-4 text-gray-800 dark:text-gray-800"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -35,8 +32,8 @@ export default function Topbar() {
                         <input
                             type="text"
                             id="search-navbar"
-                            className="block w-[170%] p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-200 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-300 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Search..."
+                            className="block w-[170%] p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-200 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-300 dark:placeholder-gray-800 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Search for projects, universities"
                         />
                     </div>
                     <div className="flex md:order-2">
