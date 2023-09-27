@@ -15,7 +15,7 @@ connectToDatabase();
 const postSchema = new mongoose.Schema({
     // Other fields related to your post
     title: {
-      type: String,
+      type: [mongoose.Schema.Types.ObjectId],
       required: true
     },
     content: {
