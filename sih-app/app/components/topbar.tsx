@@ -2,7 +2,7 @@ export default function Topbar() {
     return (
         <div id="topbar">
             <nav className="bg-white border-gray-200 dark:bg-white">
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
                     <a className="flex items-center">
                         <img
                             src="\Project Orbit.png"
@@ -121,6 +121,8 @@ export default function Topbar() {
                     </div>
                 </div>
             </nav>
+
+            
         </div>
 
     )
