@@ -12,21 +12,23 @@ An online integrated knowledge-sharing platform for Indian universities and coll
 
 ## Features
 - Student Projects can be added by universities or colleges
-- Signing in allows for personalised project recommendations
+- Signing in allows for personalized project recommendations
 - Home Page includes Feed, Popular and Categories
    * Feed includes Posts from various institutions
-   * Categories include various technologies such as IoT, AI/ML etc.
-- Posts include project details, comment and rating
-### Status of completion
-### Demerits or failure, constraints faced, reasons for failure
-### Published in journals or not
-### copyright assurance 
-### third party plagiarism checking to avoid copying
-### request access 
-- Linkedin profiles of Contributors and mentors of projects for further connection for collabs and clarifications.
+   * Categories include various technologies such as IoT, AI/ML, UI/UX etc.
+- Posts 
+   * project abstract
+   * Comments
+   * Rating
+   * Status of Completion
+   * Journal Publishing list
+   * request access
+   * constraints faced
+   * LinkedIn profiles of Contributors and mentors
+- Third-party plagiarism checking to avoid copying
 - Community to solve queries and foster knowledge sharing
--  Offensive languages should be monitored in comments and community
--  Leaderboard for top institutions
+- Leaderboard for top institutions
+
 ## Authors
 
 - [@SamJohn04](https://github.com/SamJohn04)
