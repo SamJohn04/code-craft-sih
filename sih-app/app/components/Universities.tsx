@@ -1,8 +1,9 @@
+import { PersonAdd } from '@mui/icons-material';
 import React from 'react';
 
 export default function Universities() {
     const outerBoxStyle: React.CSSProperties = {
-        width: '712px',
+        width: '800px',
         backgroundColor: 'white',
         border: 'none', // Remove the border
         borderColor: 'transparent', // Set border color to transparent
@@ -87,7 +88,7 @@ export default function Universities() {
                     width: '150px',
                     marginRight: '10px',
                 }}>
-                    <i className="fa fa-heart" style={{ marginRight: '8px' }}>Like </i> 
+                    <PersonAdd />
                     Follow
                 </button>
 

@@ -39,7 +39,7 @@ export default function PostCard({
     author = 'Mar Baselios College of Engineering and Technology',
     authorImg = 'icon/tech.svg',
     authorImgAlt = 'Mar Baselios',
-    authorHref = '/university/mar-baselios-college-of-engineering-and-technology',
+    authorHref = '/university',
     href = '/post/1',
     content = 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, ',
     tags = ['Tech', 'Science'],
@@ -81,7 +81,7 @@ export default function PostCard({
 
                     }}>{content}</p>
                 </div>
-                <div className="flex flex-row items-center justify-between gap-4 pt-8 pb-4"><div className="flex flex-row items-center gap-4"><img src={authorImg} alt={authorImgAlt}/><Link href={authorHref}>{author}</Link></div> <Button className="bg-[#AB3FFF] hover:bg-[#AB3FFF] hover:scale-110 transition-all text-white px-4" style={{display: limit ? 'flex' : 'none'}}>View Project</Button></div>
+                <div className="flex flex-row items-center justify-between gap-4 pt-8 pb-4"><div className="flex flex-row items-center gap-4"><img src={authorImg} alt={authorImgAlt}/><Link href={authorHref}>{author}</Link></div><Link href={'/post'}><Button className="bg-[#AB3FFF] hover:bg-[#AB3FFF] hover:scale-110 transition-all text-white px-4" style={{display: limit ? 'flex' : 'none'}}>View Project</Button></Link></div>
                 <hr />
                 <div className="flex flex-row items-center justify-between gap-4 pt-1"><div className="flex gap-12"><div>{[1,2,3,4,5].map((i) => <IconButton key={i} onClick={() => setRating(curr => curr === i ? 0 : i) } className="px-0">{rating >= i ? <Star key={i} style={{color: 'gold'}}/> : <StarOutline />}</IconButton>)}</div><button className="flex gap-4 items-center text-[#7C7C7C]"><Comment />{comments.length} Comment</button><button className="flex gap-4 items-center text-[#7C7C7C]"><Reply />5 Share</button></div><button className="flex gap-4 items-center text-[#7C7C7C]"><BookmarkBorderOutlined /> Save</button></div>
             </div>
