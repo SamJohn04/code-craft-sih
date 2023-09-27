@@ -13,15 +13,9 @@ export default function CategoryCard({
     imgSrc: string,
     imgAlt: string,
 }) {
-
-    const pathname = usePathname() 
-
     return (
         // <Link {href={href}}>
-            <div className="py-2 gap-4 pl-2 flex flex-row gap-4 rounded-md font-bolder w-56" style={{
-            backgroundColor: pathname === href ? "#F4E7FF" : '',
-            color: pathname === href ? '#AB3FFF' : "black",
-        }}><img src={imgSrc} alt={imgAlt}/><span className="w-full flex justify-between">{title}<KeyboardArrowDown /></span></div>
+            <div className="py-2 gap-4 pl-2 flex flex-row gap-4 rounded-md font-bolder w-56"><img src={imgSrc} alt={imgAlt}/><span className="w-full flex justify-between">{title}<KeyboardArrowDown /></span></div>
         // </Link>
     )
 }
