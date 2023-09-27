@@ -41,7 +41,7 @@ export default function PostCard({
     authorImgAlt = 'Mar Baselios',
     authorHref = '/university/mar-baselios-college-of-engineering-and-technology',
     href = '/post/1',
-    content = 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, ',
+    content = 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, ',
     tags = ['Tech', 'Science'],
     limit = true,
     comments = [],
@@ -65,7 +65,7 @@ export default function PostCard({
 
     return (
         <div className="flex flex-row bg-white rounded-md shadow-md p-10">    
-            <div className="md:w-[800px]">
+            <div className="md:max-w-[800px]">
                 <div className="flex flex-row pb-8 items-center justify-between"><div className="flex flex-row items-center gap-4"><img src="icon/tech.svg" style={{width: 48}}/><h2 className="text-xl">{title}</h2></div><div style={{display: limit ? undefined : 'none'}}><MoreVert /></div></div>
                 <div className="flex flex-row items-center justify-start gap-2">{tags.map(tag => <div key={tag} className="bg-[#F4E7FF] text-[#AB3FFF] px-4 py-1 rounded-md">{tag}</div>)}</div>
                 <div className="flex items-center justify-center"><img src={imgSrc} alt={imgAlt}/></div>

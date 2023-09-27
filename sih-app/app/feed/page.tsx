@@ -10,7 +10,7 @@ export default function Feed() {
             <div className="relative flex">
                 <SideBar/>
                 <div className="min-h-full px-20 py-12 flex flex-col justify-start">
-                    <PostCard limit={false}/>
+                    <PostCard />
                 </div>
             </div>
         </div>
