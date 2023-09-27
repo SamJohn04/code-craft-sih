@@ -11,6 +11,14 @@ async function connectToDatabase() {
 
 connectToDatabase();
 
+const tagSchema = new mongoose.Schema({
+    name: {
+      type: String,
+      required: true,
+      unique: true // Ensures that tag names are unique
+    }
+  });
+
 const userSchema = new mongoose.Schema({
     username: {
       type: String,
@@ -68,11 +76,26 @@ const likeSchema = new mongoose.Schema({
   // Sample usage in another schema (e.g., for a post)
   const postSchema = new mongoose.Schema({
     // Other fields related to your post
-    // ...
-    likes: [likeSchema], // Embed the "like" schema within the post schema
-    comments: [commentSchema] // Embed the "comment" schema within the post schema
+    title: {
+      type: String,
+      required: true
+    },
+    content: {
+      type: String,
+      required: true
+    },
+    author: {
+      type: mongoose.Schema.Types.ObjectId, // Assuming you have a User schema
+      required: true
+    },
+    createdAt: {
+      type: Date,
+      default: Date.now
+    },
+    // You can add other fields like tags, images, or any other relevant data.
+    tags: [String], // An array of tags associated with the post
+    images: [String], // An array of image URLs associated with the post
   });
   
-  const Post = mongoose.model('Post', postSchema);
   
   module.exports = Post;
