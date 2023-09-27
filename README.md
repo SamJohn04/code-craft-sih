@@ -13,8 +13,11 @@ An online integrated knowledge-sharing platform for Indian universities and coll
 ## Features
 - Student Projects can be added by universities or colleges
 - Signing in allows for personalised project recommendations
--  Home Page includes Feed, Popular and Categories
-  * Feed includes Projects from various institutions
-  * Categories include Information Technology, Civil, Mechanical, etc.
--  Community to solve queries and foster knowledge sharing
--  
+- Home Page includes Feed, Popular and Categories
+   * Feed includes Posts from various institutions
+   * Categories include Information Technology, Civil, Mechanical, etc.
+- Posts include project details, comment and rating
+- Linkedin profiles of Contributors and mentors of projects for further connection for collabs and clarifications.
+- Community to solve queries and foster knowledge sharing
+-  Offensive languages should be monitored in comments and community
+-  Leaderboard for top institutions
