@@ -9,13 +9,12 @@ function CircularProgressWithLabel(
     props: CircularProgressProps & { value: number },
   ) {
     return (
-      <Box sx={{ position: 'relative', display: 'inline-flex' }}>
-        <CircularProgress variant="determinate" style={{color: '#AB3FFF', width: '70%', marginTop: '20'}} {...props} />
+      <Box sx={{ position: 'relative', display: 'inline-flex', height: '8rem' }}>
+        <CircularProgress variant="determinate" style={{color: '#AB3FFF', width: '8rem', marginTop: '20'}} {...props} />
         <Box
           sx={{
             top: 0,
             left: 0,
-            bottom: 0,
             right: 0,
             position: 'absolute',
             display: 'flex',
@@ -89,9 +88,12 @@ export default function PostCard({
             <div className="flex flex-col h-full ml-8 pl-8 border-l-2 gap-4" style={{display: limit ? 'none' : undefined}}>
                 <span className="w-full flex justify-between items-center">Releases <MoreVert /></span>
                 <span className="font-ls text-[#5E5C5C]">Version v0.3.3.3</span>
-                <span className="w-full flex justify-between items-center">About</span>
+                <span className="w-full flex justify-between items-center font-bolder">About</span>
                 <span className="font-ls text-[#5E5C5C] mb-10"><StarOutline/> 4.2 Rating</span>
                 <CircularProgressWithLabel variant="determinate" value={completion}/>
+                <span className="w-full flex justify-between items-center font-bolder">Published in</span>
+                <a className="font-ls text-[#5E5C5C]">IEEE Journal 2023</a>
+                <button className="bg-[#464646] text-white px-12 py-2 rounded-md">Request Access</button>
             </div>
         </div>
     )
