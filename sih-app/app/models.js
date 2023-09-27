@@ -97,5 +97,32 @@ const likeSchema = new mongoose.Schema({
     images: [String], // An array of image URLs associated with the post
   });
   
+  const photoSchema = new mongoose.Schema({
+    title: String,
+    description: String,
+    uploader: {
+      type: mongoose.Schema.Types.ObjectId, // Reference to the user who uploaded it
+      ref: 'User', // Assuming you have a User model
+    },
+    imageUrl: String, // URL or file path to the image
+    uploadedAt: {
+      type: Date,
+      default: Date.now,
+    },
+  });
+
+  const videoSchema = new mongoose.Schema({
+    title: String,
+    description: String,
+    uploader: {
+      type: mongoose.Schema.Types.ObjectId, // Reference to the user who uploaded it
+      ref: 'User', // Assuming you have a User model
+    },
+    videoUrl: String, // URL or file path to the video
+    uploadedAt: {
+      type: Date,
+      default: Date.now,
+    },
+  });
   
   module.exports = Post;
