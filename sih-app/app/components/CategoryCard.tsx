@@ -1,6 +1,5 @@
 import { KeyboardArrowDown } from "@mui/icons-material"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
 
 export default function CategoryCard({
     title,
