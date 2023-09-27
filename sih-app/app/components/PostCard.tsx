@@ -91,6 +91,13 @@ export default function PostCard({
                 <span className="w-full flex justify-between items-center font-bolder">About</span>
                 <span className="font-ls text-[#5E5C5C] mb-10"><StarOutline/> 4.2 Rating</span>
                 <CircularProgressWithLabel variant="determinate" value={completion}/>
+                <p>Contributors</p>
+                <div className="flex space-x-5">
+                  <img className="h-16 rounded-full" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="" />
+                  <img className="h-16 rounded-full" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="" />
+                  <img className="h-16 w-16 rounded-full" src="https://flyingcdn-942385.b-cdn.net/wp-content/uploads/2018/12/Neal-Caffrey-Wardrobe-sunglasses-1a.jpg" alt="" />
+                  
+                </div>
                 <span className="w-full flex justify-between items-center font-bolder">Published in</span>
                 <a className="font-ls text-[#5E5C5C]">IEEE Journal 2023</a>
                 <button className="bg-[#464646] text-white px-12 py-2 rounded-md">Request Access</button>
