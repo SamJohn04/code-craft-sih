@@ -43,7 +43,7 @@ export default function PostCard({
     authorHref = '/university/mar-baselios-college-of-engineering-and-technology',
     href = '/post/1',
     content = 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, Lorem ipsum dolor sit amet consectetur adipiscing elit Ut, ',
-    tags = ['Tech', 'Science'],
+    tags = ['Tech', 'Science', 'Python'],
     limit = true,
     comments = [],
 }: {
