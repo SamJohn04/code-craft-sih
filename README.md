@@ -9,3 +9,17 @@ An online integrated knowledge-sharing platform for Indian universities and coll
 
 ## Logo 
 ![Project Orbit](https://github.com/SamJohn04/code-craft-sih/assets/116499807/fbf08c8f-ebb1-4d0a-abec-561a060479ce)
+
+## Features
+- Student Projects can be added by universities or colleges
+- Signing in allows for personalised project recommendations
+-  Home Page includes Feed, Projects and Categories
+  * Projects
+- Popular
+- Categories such as Information Technology, 
+  * Information Technology
+  * Civil
+  * Mechanical
+  * Electrical and Electronics
+  * Electronics and Communication
+  * 
